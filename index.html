@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Realtime Chat Application</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="chat">
+
+<!-- Header -->
+
+<div class="header">
+
+<h2>Realtime Chat</h2>
+
+<div id="users">Online Users: 0</div>
+
+<button onclick="toggleDark()">🌙</button>
+
+</div>
+
+
+<!-- Messages -->
+
+<ul id="messages"></ul>
+
+
+<!-- Typing indicator -->
+
+<p id="typing"></p>
+
+
+<!-- Input area -->
+
+<div class="input">
+
+<input 
+id="username" 
+placeholder="Your name"
+autocomplete="off"
+>
+
+<input 
+id="msg" 
+placeholder="Type a message..."
+autocomplete="off"
+onkeypress="checkEnter(event)"
+>
+
+<button onclick="send()">Send</button>
+
+</div>
+
+</div>
+
+
+<!-- Socket connection -->
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
