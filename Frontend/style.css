@@ -1,0 +1,122 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:#0f172a;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.chat{
+  width:450px;
+  height:90vh;
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.header{
+  background:#2563eb;
+  color:white;
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.header button{
+  border:none;
+  padding:6px 10px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+#messages{
+  flex:1;
+  overflow-y:auto;
+  list-style:none;
+  padding:15px;
+  background:#f1f5f9;
+}
+
+#messages li{
+  background:#e2e8f0;
+  margin-bottom:10px;
+  padding:10px;
+  border-radius:12px;
+  max-width:75%;
+}
+
+.me{
+  background:#2563eb !important;
+  color:white;
+  margin-left:auto;
+}
+
+.msg-header{
+  display:flex;
+  justify-content:space-between;
+  font-size:11px;
+  margin-bottom:4px;
+}
+
+#typing{
+  padding-left:10px;
+  font-size:12px;
+  color:gray;
+}
+
+.input{
+  display:flex;
+  gap:5px;
+  padding:10px;
+}
+
+#username{
+  width:80px;
+}
+
+#username,
+#msg{
+  padding:8px;
+  border:1px solid #ccc;
+  border-radius:8px;
+}
+
+#msg{
+  flex:1;
+}
+
+.input button{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.dark{
+  background:#020617;
+}
+
+.dark .chat{
+  background:#1e293b;
+}
+
+.dark #messages{
+  background:#0f172a;
+}
+
+.dark #messages li{
+  background:#334155;
+  color:white;
+}
