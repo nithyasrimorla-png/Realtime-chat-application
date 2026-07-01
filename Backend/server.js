@@ -17,7 +17,7 @@ const io = new Server(server, {
 let users = 0;
 
 app.get("/", (req, res) => {
-  res.send("Chat Server Running 🚀");
+  res.send("Chat Server Running ");
 });
 
 io.on("connection", (socket) => {
@@ -50,5 +50,5 @@ io.on("connection", (socket) => {
 });
 
 server.listen(5000, () => {
-  console.log("🚀 Server running on port 5000");
+  console.log(" Server running on port 5000");
 });
